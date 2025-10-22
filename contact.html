@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Contact Us</h1>
+
+    <form id="contact-form" novalidate>
+      <label for="name">Full Name</label>
+      <input id="name" data-testid="test-contact-name" type="text" required />
+      <small id="error-name" data-testid="test-contact-error-name"></small>
+
+      <label for="email">Email</label>
+      <input id="email" data-testid="test-contact-email" type="email" required />
+      <small id="error-email" data-testid="test-contact-error-email"></small>
+
+      <label for="subject">Subject</label>
+      <input id="subject" data-testid="test-contact-subject" type="text" required />
+      <small id="error-subject" data-testid="test-contact-error-subject"></small>
+
+      <label for="message">Message</label>
+      <textarea id="message" data-testid="test-contact-message" minlength="10" required></textarea>
+      <small id="error-message" data-testid="test-contact-error-message"></small>
+
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+      <p id="success" data-testid="test-contact-success"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

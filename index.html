@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>MY PROFILE CARD</title>
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <header><h2 data-testid="test-user-name"> BELLO ADELANI JAMIU</h2></header>
+        <figure>
+            <img src="AVATAR.jpg" alt="profile pic of BELLO ADELANI JAMIU" data-testid="test-user-avatar">
+                
+        </figure>
+        <div class="info">
+        <p data-testid="test-user-bio">Passionate frontend developer learning modern web technologies and accessibility.</p>
+        <p> current time in miliseconds:
+             <span data-testid="test-user-time">00000000</span>
+        </p>
+        <nav data-testid="test-user-social-links">
+            <ul>
+                <li>
+                    <a href="https://github.com/topics/login" target="_blank" data-testid="test-user-social-github"  rel="noopener noreferrer">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com" target="_blank" data-testid="test-user-social-facebook"  rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+        </nav>  
+        </div>
+        <div class="details">
+        <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Football</li>
+                <li>Music and Movies</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+                <li>Delays</li>
+                <li>Noise</li>
+                <li>Laziness</li>
+            </ul>
+        </section>
+        </div>
+    </article>
+    
+    <script src="script.js"></script>
+</body>
+</html>
